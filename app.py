@@ -1,11 +1,11 @@
 
-## Load the data to get started
+
 import pandas as pd
 import numpy as np
 
 
-import numpy as np # linear algebra
-import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
+import numpy as np 
+import pandas as pd 
 from sklearn.feature_extraction.text import CountVectorizer
 
 from sklearn.model_selection import train_test_split
@@ -16,7 +16,7 @@ import string
 import pickle
 
 
-# Shamelessly copied from http://flask.pocoo.org/docs/quickstart/
+
 
 from flask import Flask, render_template,request
 app = Flask(__name__)
@@ -78,24 +78,13 @@ def data_cleaning (text):
 
 
 
-# def prediction(tweet):
-#     model.classes_
 
-#     tweet = data_cleaning(tweet)
-    
-
-#     pred = model.predict(tweet)
-   
-#     print(pred)
-#     return (model.classes_[pred])
 
 def predict_dialect(text):
     cl_text=data_cleaning(text)
     txt_lst=[cl_text,]
     pred=model.predict(txt_lst)
     return pred
-
-# model.predict
 
 
 
