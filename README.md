@@ -1,7 +1,6 @@
 
 # Arabic Dialect Classification
 
-Using different models trained on Twitter data to identify the Arabic dialect of a text
-and deploying the best one via flask api.
+fetching Arabic tweets by post request, performing various pre-processing using Regular expression, training two models (Linear SVC and GRU Network) on the data to identify the Arabic dialect and deploying the best one via Flask API.
 
 
